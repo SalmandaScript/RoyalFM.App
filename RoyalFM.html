@@ -1,0 +1,770 @@
+<!--Computer Engineering Student Teaching l self to code, my first projects-->
+
+<html>
+<head>
+<meta charset="utf-8"/>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>RoyalFM Streamin'Radio</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    
+    <meta name="mobile-web-app-capable" content="yes"/>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <meta name="msapplication-starturl" content=""/>
+    
+    <meta name="theme-color" content="teal"/>
+
+<link rel="stylesheet" href="RoyalFM.css" type="text/css"/>
+
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="materialize.min.css" type="text/css"/>
+
+<link rel="icon" type="image" href="Royal.png"/>
+
+<style>
+	img{
+border-style: groove;
+border-color: gray;
+border-width: 2px;
+}
+
+html:active{
+background-color: maroon;
+}
+	</style>
+</head>
+
+<body style="color: white" align="center">
+	
+	<script type="text/javascript">
+document.write("<h6>"+Date()+"</h6>");
+  </script>
+	
+<header role="banner"><h1><img src="Royal.png"/>RoyalFM.</h1></header>
+<div class="royal"><br><p><span>STREAMING RADIO...</span></p><br>
+
+<p><span>PLAYING REGGAE AND DANCEHALL MUSIC</span></p></div><br>
+
+
+<!--navigation buttons-->
+<div class="btn-group">
+<button type="button" class="btn btn-default">Artist of the Week</button> 
+<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button> 
+
+<ul class="dropdown-menu royal2"> 
+<center><li><button style="border-color: white" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal3">Reggae Artist</button></li>  
+
+<li class="divider"></li> 
+<li><button style="border-color: white" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal4">Dancehall Artist</button></li></center> 
+</ul> 
+</div>
+
+<div class="btn-group">
+<button type="button" class="btn btn-default">Top 20 Chart</button> 
+<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button> 
+<ul class="dropdown-menu royal2">
+	 
+<center><li><button style="border-color: white" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal1">
+Reggae Chart</button></li>  
+
+
+<li class="divider"></li> 
+<li><button style="border-color: white" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal2">Dancehall Chart</button></li></center> 
+</ul> 
+</div>
+
+<div class="btn-group">
+<button type="button" class="btn btn-default">More Service</button> 
+<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button> 
+<ul class="dropdown-menu royal2"> 
+
+<center><li><button style="border-color: white" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal7">
+	Featuring</button>
+	
+	<li class="divider"></li>
+	<li><button style="border-color: white" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal5"
+>Vote for a Song</button></li>
+
+<li class="divider"></li>
+<li ><!--<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/musicStore.html">-->
+	
+	<button style="border-color: white" type="button" class="btn btn-secondary btn-sm"
+	 onclick="alert('This Site is still under development.');">Get Music or Beats</button> </a></li>
+
+<li class="divider"></li> 
+<li><button style="border-color: white" type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal6">
+	Artist Submissions</button></li>
+	</center> 
+</ul> 
+</div>
+<!--end of navigation buttons-->
+
+<!--start of welcome modal-->
+<!--<div id="myModal" class="modal fade royal"> 
+<div class="modal-dialog"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<h4 class="modal-title"><img class="royal4" src="Royal.png"/>RoyalFM...</h4> 
+</div> 
+<div class="modal-body royal3"> 
+<p>Discover great Reggae & Dancehall Artist & their music.</p> 
+<p class="text-warning"><small>Also you can support Artist featured on this platform, by buying their Music & Products. One Love.</small></p> 
+</div> 
+<div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div>-->
+<!--end of welcome modal-->
+
+<!--start of reggaeChart modal-->
+<div id="myModal1" class="modal fade royal"> 
+<div class="modal-dialog; modal-lg"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<h6 class="modal-title"><img class="royal4" src="Royal.png"/>RoyalFM...</h6> 
+</div>
+
+<div class="modal-body royal3">
+	 <span>Top 20 Reggae Chart</span>
+</div></div>
+
+<p style="color:orange">1. Bazil_ Grow<img src="Royal.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Bazil_Grow.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">2. Fantan Mojah_ Queen Empress<img src="Top20Reggae/Images/FantanMojah.jpg"/>
+</p>
+<audio controls loop src="Top20Reggae/FantanMojah_EmpressQueen.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">3. PQ ft Blasto_ UpTown Girl<img src="Top20Reggae/Images/Blasto.jpg"/>
+</p>
+<audio controls loop src="Top20Reggae/UpTownGirl.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">4. Damian Marley_ Reach Home<img src="Top20Reggae/Images/DamianMarley.png"/></p>
+<audio controls loop src="Top20Reggae/DamianMarley_ReachHome.mp3" type="audio/mpeg"></audio>
+<hr>
+
+<p style="color:orange">5. Bugle_ Anointed<img src="Top20Reggae/Images/Bugle.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Bugle_Anointed.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">6. Chronixx_ Jah is there<img src="Top20Reggae/Images/Chronixx.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Chronixx_JahIsThere.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">7. Kyng Sameer_ Pretty Girl<img src="Top20Reggae/Images/PorusRiddim.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Pretty_Girl.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">8. Eve ft Koshens _ Reload<img src="Royal.png"/>
+</p>
+<audio controls loop src="Top20Reggae/EVE_Reload ft Konshens.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">9. Buju Banton_ Lucky nuh Ras<img src="Top20Reggae/Images/BujuBanton.png"/>
+</p>
+<audio controls loop src="Top20Reggae/BujuBanton_Lucky.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">10. Bugle ft Dre Island_ Day by Day<img src="Top20Reggae/Images/Bugle.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Bugle&DreIsland_DayByDay.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">11. Damian Marley_ Medication<img src="Top20Reggae/Images/DamianMarley.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Jr.Gong_Medication.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">12. Bugle_ Friend indeed<img src="Top20Reggae/Images/Bugle.png"/></p>
+<audio controls loop src="Top20Reggae/Friend_indeed.mp3" type="audio/mpeg"></audio>
+<hr>
+
+<p style="color:orange">13. Cedella Marley<br> Redemption Song<img src="Top20Reggae/Images/CedellaMarley.png"/>
+</p>
+<audio controls loop src="Top20Reggae/CedellaMarley_RedemptionSong.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">14. Duane Stephenson feat<br> Agent Sasco_ Play<img src="Top20Reggae/Images/Duane.jpg"/>
+</p>
+<audio controls loop src="Top20Reggae/DuaneStephenson&Sasco_Play.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">15. Capleton_ Better Days<img src="Top20Reggae/Images/Capleton.jpg"/>
+</p>
+<audio controls loop src="Top20Reggae/BetterDays_Remix.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">16. New Kidz_ Upwards<img src="Top20Reggae/Images/PorusRiddim.png"/>
+</p>
+<audio controls src="Top20Reggae/Upwards.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">17. Lybran_ Rich Rich<img src="Top20Reggae/Images/Lybran.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Rich_Rich.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">18. Shane E_ My Time<img src="Top20Dancehall/Images/ShaneE.png"/>
+</p>
+<audio controls loop src="Top20Reggae/My_Time.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">19. Jamiel_ Higher<img src="Top20Dancehall/Images/Jahmiel.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Higher.mp3" type="audio/mpeg"></audio><hr>
+	
+<p style="color:orange">20. Knaxx_ Easy Fi Switch<img src="Top20Reggae/Images/Knaxx.png"/>
+</p>
+<audio controls loop src="Top20Reggae/Easy_Fi_Switch.mp3" type="audio/mpeg"></audio><hr>
+	
+<p class="text-warning"><small>Support Artist featured on this platform, by buying their Music & Products. One Love.</small></p> 
+</div> 
+<div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div>
+</div>
+<!--end of reggaeChart modal-->
+
+
+<!--start of dancehallChart modal-->
+<div id="myModal2" class="modal fade royal"> 
+<div class="modal-dialog; modal-lg"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<h6 class="modal-title"><img class="royal4" src="Royal.png"/>RoyalFM...</h6> 
+</div>
+
+<div class="modal-body royal3">
+	 <span>Top 20 Dancehall Chart</span>
+</div></div>
+
+<p style="color:orange">1. Vybz Kartel_ Christmass<img src="Top20Dancehall/Images/VybzKartel.png"/></p>
+<audio controls loop src="Top20Dancehall/VybzKartel_Christmass.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">2. Gage_ Good Woman<img src="Top20Dancehall/Images/Gage.png"/></p>
+<audio controls loop src="Top20Dancehall/Gage_GoodWoman.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">3. Dexta Daps_ Figure it Out<img src="Top20Dancehall/Images/DextaDaps.jpg"/>
+</p>
+<audio controls loop src="Top20Dancehall/FigureItOut_DextaDaps.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">4. Bounty killer_ Misleader<img src="Top20Dancehall/Images/BountyKiller.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/Misleader.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">5. Chippin_ Desire<img src="Top20Dancehall/Images/RudeFlexRiddim.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/Desire.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">6. Masicka_ Better Days<img src="Top20Dancehall/Images/Masicka.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/BetterDays.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">7. J_Atiletick_ Spoil You<img src="Top20Dancehall/Images/RudeFlexRiddim.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/SpoilYou.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">8. Alkaline_ Ocean Wave<img src="Top20Dancehall/Images/Alkaline.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/Alkaline_Ocean.mp3" type="audio/mpeg"></audio><hr>
+	
+	<p style="color:orange">9. Zig Riccardo, Gappy Ranks & Million Stylez_ Easy<img src="Top20Dancehall/Images/GappyRanks.jpg"/></p>
+<audio controls loop src="Top20Dancehall/Easy_MillionStylez&GappyRanks.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">10. Episodz, Malinga Mafia, Sangie & Tay Green_ Badman Yard<img src="Top20Dancehall/Images/Malinga.png"/></p>
+<audio controls loop src="Top20Dancehall/Episodz_BadmanYard.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">11. Buju Banton_ Nuh Trust Phone<img src="Top20Reggae/Images/BujuBanton.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/BujuBanton_MiNuhTrustPhone.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">12. Kiprich ft Cecile<br> Come Back Tommorow<img src="Top20Dancehall/Images/Kiprich.jpg"/>
+</p>
+<audio controls loop src="Top20Dancehall/Cecile&Kiprich_ComeBackTomorrow.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">13. Collie Buddz feat B Young<br> & Rus_  Bank<img src="Top20Dancehall/Images/CollieBuddz.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/CollieBuddz_Bank_feat.BYoung&Rus.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">14.Chase and Status feat<br> Masicka_ Weed and Rum<img src="Top20Dancehall/Images/Chase&Status.jpg"/>
+</p>
+<audio controls loop src="Top20Dancehall/Chase&Status_Weed&Rum_ft.Masicka.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">15. Gage_ Forget Me Not<img src="Top20Dancehall/Images/Gage.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/Gage_ForgetMeNot.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">16. Gage_ Family<img src="Top20Dancehall/Images/Gage.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/Gage_Family.mp3" type="audio/mpeg"></audio><hr>
+	
+	<p style="color:orange">17.Busy Signal_ Do Mi Own Ting<img src="Top20Dancehall/Images/BusySignal.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/Do_Mi_Own_Ting.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">18. Jahmiel_ The World<img src="Top20Dancehall/Images/Jahmiel.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/The_World.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">19. Buju Banton_ Bagga Mouth<img src="Top20Reggae/Images/BujuBanton.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/BujuBanton_BaggaMouth.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">20. Jahmiel_ Winning<img src="Top20Dancehall/Images/Jahmiel.png"/>
+</p>
+<audio controls loop src="Top20Dancehall/Jahmiel_Winning.mp3" type="audio/mpeg"></audio><hr>
+
+
+<p class="text-warning"><small>Support Artist featured on this platform, by buying their Music & Products. One Love.</small></p> 
+</div> 
+<div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--end of dancehallChart modal-->
+
+
+<!--start of Reggae Artist of the week modal-->
+<div id="myModal3" class="modal fade royal"> 
+<div class="modal-dialog; modal-lg"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<h6 class="modal-title"><img class="royal4" src="Royal.png"/>RoyalFM...</h6> 
+</div>
+
+<div class="modal-body royal3">
+	 <span>Reggae Artist of the Week</span>
+</div></div>
+
+<img class="featured" src="ReggaeArtist/Bugle.png"/>
+
+<p class="text-warning">Bugle is a Reggae and dancehall Artist from Jamaica</p>
+
+<span>Featured Tracks</span><hr>
+
+<p style="color:orange">Anointed<img class="royal4" src="ReggaeArtist/Bugle.png"/></p>
+<audio controls loop src="ReggaeArtist/Bugle_Anointed.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Good Friends<img class="royal4" src="ReggaeArtist/
+Bugle.png"/></p>
+<audio controls loop src="ReggaeArtist/Bugle_GoodFriends.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Friend lndeed<img class="royal4" src="ReggaeArtist/Bugle.png"/>
+</p>
+<audio controls loop src="ReggaeArtist/Bugle_Friendindeed.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Day by Day feat Dre lsland<img class="royal4" src="ReggaeArtist/
+Bugle.png"/>
+</p>
+<audio controls loop src="ReggaeArtist/Bugle&DreIsland_DayByDay.mp3" type="audio/mpeg"></audio><hr>
+
+<!--<p style="color:orange">Friendz<img class="royal4" src="ReggaeArtist/
+jahmiel.jpg"/>
+</p>
+<audio controls src="07_Friendz.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Friendz<img class="royal4" src="ReggaeArtist/
+jahmiel.jpg"/>
+</p>
+<audio controls src="07_Friendz.mp3" type="audio/mpeg"></audio><hr>-->
+
+<p class="text-warning"><small>Support Artist featured on this platform, by buying their Music & Products. One Love.</small></p> 
+</div> 
+<div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--end of Reggae Artist of the week modal-->
+
+<!--start of Dancehall Artist of the week modal-->
+<div id="myModal4" class="modal fade royal"> 
+<div class="modal-dialog; modal-lg"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<h6 class="modal-title"><img class="royal4" src="Royal.png"/>RoyalFM...</h6>
+</div>
+
+<div class="modal-body royal3">
+	 <span>Dancehall Artist of the Week</span>
+</div></div>
+
+<img class="featured" src="DancehallArtist/Popcaan.jpg"/>
+
+<p class="text-warning"
+>Andrae Hugh Sutherland (born 19 July 1988), known professionally as Popcaan, is a Jamaican singer.
+In 2008, Popcaan joined Vybz Kartel's Gaza Music Empire. 
+</p>
+
+<span>Featured Tracks</span><hr>
+<p style="color:orange">Chill<img class="royal4" src="DancehallArtist/Popcaan.jpg"/></p>
+<audio controls loop src="DancehallArtist/Chill.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Goodaz Gal<img class="royal4" src="DancehallArtist/Popcaan.jpg"/>
+</p>
+<audio controls loop src="DancehallArtist/GoodazGal.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Bruck Di Buddy<img class="royal4" src="DancehallArtist/Popcaan.jpg"/>
+</p>
+<audio controls loop src="DancehallArtist/
+BruckDiBuddy.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Bank and God<img class="royal4" src="DancehallArtist/Popcaan.jpg"/>
+</p>
+<audio controls loop src="DancehallArtist/
+Bank&God.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Mamakita<img class="royal4" src="DancehallArtist/
+Popcaan.jpg"/>
+</p>
+<audio controls loop src="DancehallArtist/
+Mamakita.mp3" type="audio/mpeg"></audio><hr>
+
+<p style="color:orange">Party Next Door ft Drake<img class="royal4" src="DancehallArtist/
+Popcaan.jpg"/>
+</p>
+<audio controls loop src="DancehallArtist/
+PartyNextDoor ft Drake.mp3" type="audio/mpeg"></audio><hr>
+
+<p class="text-warning"><small>Support Artist featured on this platform, by buying their Music & Products. One Love.</small></p> 
+</div> 
+<div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div>
+<!--end of Dancehall Artist of the week modal-->
+
+<!--start of vote for a song modal-->
+<div id="myModal5" class="modal fade royal"> 
+<div class="modal-dialog; modal-lg"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<h6 class="modal-title"><img class="royal4" src="Royal.png"/>RoyalFM...</h6> 
+</div>
+
+<div class="modal-body royal3">
+	 Vote for a Song
+</div></div><br>
+	
+        <form method="POST" enctype="text/plain" name="MyForm" action="mailto:clementjuma.cmm@gmail.com" onSubmit="submit"/>
+
+<!--form using HTML5 Validation
+required keyword-->
+
+<label><span>Enter Artist Name:</span></label><input type="text" name="Artist Name" required="required"/>
+<label><span>Enter Song Name:</span></label><input type="text"
+name="Song Name"
+ required="required"/>
+<label><span>Enter Comment:</span></label><input type="text"
+name="Comment"
+ required="required"/>
+<input type="reset" class="btn-sm" value="Reset"/>
+<input type="submit" class="btn-sm" value="Submit"/>
+</form>
+
+<p class="text-warning">Check out Our Sponsor's Websites</p>
+
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/>
+<div class="caption"> 
+<p>SM_ Tech</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
+ src="Convicted.jpg"/>
+ <div class="caption"> 
+<p>Convicted Records</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+	
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/>
+<div class="caption"> 
+<p>Place an Ad</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
+ src="Advert.jpg"/>
+ <div class="caption"> 
+<p>Place an Ad</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+
+<p class="text-warning"><small>Support Artist featured on this platform, by buying their Music & Products.</small></p> 
+</div> 
+<div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div>
+<!--end of vote for a song modal-->
+
+<!--start of Artist submission modal-->
+<div id="myModal6" class="modal fade royal"> 
+<div class="modal-dialog; modal-lg"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<h6 class="modal-title"><img class="royal4" src="Royal.png"/>RoyalFM...</h6> 
+</div>
+
+<div class="modal-body royal3 text-warning">
+	 Submit; a Single, an Ep, an Album, a MixTape, a Medley or an instrumental.
+</div></div><br>
+	
+	<!--form using vanilla javascript for validation-->
+	
+	<form name="MyForm" method="post" action="mailto:clementjuma.cmm@gmail.com" onsubmit="return validateform()" >  
+	
+<label><span>Enter Your Name:</span></label><input type="text" name="Name" required="required"/>
+
+<label><span>	Enter Project Name:</span></label><input type="text" name="Pname" required="required"/>
+
+	<p><span>Choose Project File</span></p>
+<center><input class="btn-sm btn-warning" type="file" name="Song"
+required="required"/></center><br>
+	
+<p><span>Choose Your Image</span></p>
+<center><input class="btn-sm btn-warning" type="file" name="Song"
+required="required"/></center>
+<hr>
+	
+	<input type="reset" class="btn-sm" value="Reset"/>
+<input type="submit" class="btn-sm" value="Submit"/>
+</form>
+
+<p class="text-warning">Altenatively You Send your Work via; E-mail, WhatsApp or Telegram.</p>
+
+<a href="https://mail.me/Clementjumma.cmm@gmail.com">
+	<img src="Gmail.png" alt="E-mail"
+/></a>
+
+<a href="https://wa.me/message/…
+"><img src="WhatsApp.png" alt="WhatsApp"/></a>
+
+<a href="https://t.me/Salmandamusiq"><img src="Telegram.png" alt="Telegram"/></a>
+
+<p class="text-warning"><small>Remember to include your Picture, your Name and Project Name.</small></p><hr> 
+
+
+<p class="text-warning">Check out Our Sponsor's Websites</p>
+
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/>
+<div class="caption"> 
+<p>SM_ Tech</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a href="file:///storage/emulated/0/Convicted/Convicted.html"><img class="ads"
+ src="Convicted.jpg"/>
+ <div class="caption"> 
+<p>Convicted Records</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+	
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/>
+<div class="caption"> 
+<p>Place an Ad</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
+ src="Advert.jpg"/>
+ <div class="caption"> 
+<p>Place an Ad</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+
+<p class="text-warning"><small>Support Artist featured on this platform, by buying their Music & Products.</small></p> 
+</div> 
+
+<div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div>
+<!--end of Artist submission modal-->
+
+
+<!--start of featured modal-->
+<div id="myModal7" class="modal fade royal"> 
+<div class="modal-dialog; modal-lg"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<h6 class="modal-title"><img class="royal4" src="Royal.png"/>RoyalFM...</h6> 
+</div>
+
+<div class="modal-body royal3">
+<span>Namiza Riddim.</span>
+</div></div>
+
+<img class="featured" src="namiza.jpg"/>
+<p style="color:orange">Namiza Riddim_ Medley Various Artist</p>
+
+<audio controls loop src="Sessions/NamizaDjSpydah.mp3" type="audio/mpeg"></audio><hr>
+
+
+<p class="text-warning">Check out Our Sponsor's Websites</p>
+
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/>
+<div class="caption"> 
+<p>SM_ Tech</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
+ src="Convicted.jpg"/>
+ <div class="caption"> 
+<p>Convicted Records</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+	
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/>
+<div class="caption"> 
+<p>Place an Ad</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
+ src="Advert.jpg"/>
+ <div class="caption"> 
+<p>Place an Ad</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+
+<p class="text-warning"><small>Support Artist featured on this platform, by buying their Music & Products. One Love.</small></p> 
+</div> 
+<div class="modal-footer"> 
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+<!--end of featured modal-->
+
+<marquee>Featuring: Reggae and Dancehall Sessions, Various Artist Worldwide.</marquee>
+<div>	<img id="image" class="visual" src="Royal.png"/>
+	</div>
+		
+		<!--buttons for audio control-->
+		<div class="royal">
+ <audio id="idAudio"></audio>
+<button type="button" class="btn btn-success" onclick="playSong();salmanda();">Play</button>&nbsp;
+ 
+ <button type="button" class="btn btn-info" onclick="pauseSong();salmanda2();">Pause</button>&nbsp;
+ 
+ <button type="button" class="btn btn-danger" onclick="stopSong();salmanda2();">Stop</button>&nbsp;
+ 
+ <button type="button" class="btn btn-warning" onclick="nextSong();salmanda();">Next</button>&nbsp;
+ 
+ <button type="button" class="btn btn-success" onclick="prevSong();salmanda();">Previous</button>
+ </div>
+
+ <div class="royal"><br>
+ <span>PROGRAMME DURATION</span>
+ <span id="lblDuration"></span>s 
+ <input value="0" id="durationR" oninput="seekSong();" type="range" min="0" style="width:100%">
+ <span>VOLUME</span>
+ <input id="idVolume" oninput="changeVolume();" value="1" type="range" min="0" step="0.1" max="1" style="width:100%">
+</div><br>
+<!--end of audio control button-->
+	
+<span>DOWNLOAD THE RoyalFM APP HERE<a href="RoyalFM.signed.zip"><img id="download" src="download.png"/></a></span><hr>
+	
+<nav><a href="file:///storage/emulated/0/Webdevelopment/about/about.html">
+	ABOUT</a>|<a href="file:///storage/emulated/0/Webdevelopment/about/contact.html">ENQUIRIES & FEEDBACK</a>|<a href="file:///storage/emulated/0/Webdevelopment/about/termsOfService.html">TERMS OF SERVICE</a></nav><br>
+
+ <span>RoyalFM OUR JOURNEY, OUR NATION</span>
+ 	
+ 	<figure></figure>	<aside></aside>
+ 	<footer>&copy2023|RoyalFM Streaming Radio|All rights reserved</footer>
+ 	
+ 	<!--script links-->
+<script src="jquery.min.js"></script>
+
+<script src="RoyalFM.js"></script>
+
+<script src="bootstrap.min.js"></script>
+
+<script src="jquery-ui.min.js"></script>
+
+</body>
+</html>
+    
