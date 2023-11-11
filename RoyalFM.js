@@ -35,7 +35,8 @@ var _audio = document.getElementById("idAudio");
 
   var _songList = [
   {
-  url: "https://drive.google.com/file/d/1SuT4Q51lhaN3eyL1XAZjwrqt8Ep80r8a/view?usp=drivesdk"},
+  url: "https://drive.google.com/file/d/1SuT4Q51lhaN3eyL1XAZjwrqt8Ep80r8a/view?usp=drivesdk"
+  },
    {
   url: "Sessions/dancehallMix2.mp3"
   },
