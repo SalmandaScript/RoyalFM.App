@@ -35,7 +35,7 @@ var _audio = document.getElementById("idAudio");
 
   var _songList = [
   {
-  url: "https://drive.google.com/file/d/RoyalFM/Sessions/DancehallMix3.mp3
+  url: "https://drive.google.com/RoyalFM/Sessions/DancehallMix3.mp3
     "
   },
    {
