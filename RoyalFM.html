@@ -37,10 +37,13 @@ border-width: 2px;
 html:active{
 background-color: maroon;
 }
+
+body{
+	text-align: center;
+}
 	</style>
 </head>
-
-<body style="color: white" align="center">
+<body style="color: white">
 	
 	<script type="text/javascript">
 document.write("<h6>"+Date()+"</h6>");
@@ -426,8 +429,7 @@ BruckDiBuddy.mp3" type="audio/mpeg"></audio><hr>
 Bank&God.mp3" type="audio/mpeg"></audio><hr>
 
 <p style="color:orange">Mamakita<img class="royal4" src="DancehallArtist/
-Popcaan.jpg"/>
-</p>
+Popcaan.jpg"/></p>
 <audio controls loop src="DancehallArtist/
 Mamakita.mp3" type="audio/mpeg"></audio><hr>
 
@@ -460,18 +462,21 @@ PartyNextDoor ft Drake.mp3" type="audio/mpeg"></audio><hr>
 	 Vote for a Song
 </div></div><br>
 	
-        <form method="POST" enctype="text/plain" name="MyForm" action="mailto:clementjuma.cmm@gmail.com" onSubmit="submit"/>
+        <form method="POST" enctype="text/plain" name="MyForm" action="mailto:clementjuma.cmm@gmail.com" onSubmit="callback()"/>
 
 <!--form using HTML5 Validation
 required keyword-->
 
 <label><span>Enter Artist Name:</span></label><input type="text" name="Artist Name" required="required"/>
+
 <label><span>Enter Song Name:</span></label><input type="text"
 name="Song Name"
  required="required"/>
+ 
 <label><span>Enter Comment:</span></label><input type="text"
 name="Comment"
  required="required"/>
+ 
 <input type="reset" class="btn-sm" value="Reset"/>
 <input type="submit" class="btn-sm" value="Submit"/>
 </form>
@@ -482,20 +487,14 @@ name="Comment"
 <div class="row"> 
 <div class="col-xs-6"> 
 <div class="thumbnail">
-	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/>
-<div class="caption"> 
-<p>SM_ Tech</p></a> 
-</div> 
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/></a>  
 </div>
 </div>
 
 <div class="col-xs-6"> 
 <div class="thumbnail">
 <a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
- src="Convicted.jpg"/>
- <div class="caption"> 
-<p>Convicted Records</p></a> 
-</div>
+ src="Convicted.jpg"/></a> 
 </div> 
 </div> 
 </div> 
@@ -505,20 +504,14 @@ name="Comment"
 <div class="row"> 
 <div class="col-xs-6"> 
 <div class="thumbnail">
-	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/>
-<div class="caption"> 
-<p>Place an Ad</p></a> 
-</div> 
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/></a>  
 </div>
 </div>
 
 <div class="col-xs-6"> 
 <div class="thumbnail">
 <a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
- src="Advert.jpg"/>
- <div class="caption"> 
-<p>Place an Ad</p></a> 
-</div>
+ src="Advert.jpg"/></a> 
 </div> 
 </div> 
 </div> 
@@ -549,7 +542,7 @@ name="Comment"
 	
 	<!--form using vanilla javascript for validation-->
 	
-	<form name="MyForm" method="post" action="mailto:clementjuma.cmm@gmail.com" onsubmit="return validateform()" >  
+	<form name="MyForm" method="post" action="mailto:clementjuma.cmm@gmail.com" onsubmit="callback()" >  
 	
 <label><span>Enter Your Name:</span></label><input type="text" name="Name" required="required"/>
 
@@ -560,7 +553,7 @@ name="Comment"
 required="required"/></center><br>
 	
 <p><span>Choose Your Image</span></p>
-<center><input class="btn-sm btn-warning" type="file" name="Song"
+<center><input class="btn-sm btn-warning" type="file" name="image"
 required="required"/></center>
 <hr>
 	
@@ -588,20 +581,14 @@ required="required"/></center>
 <div class="row"> 
 <div class="col-xs-6"> 
 <div class="thumbnail">
-	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/>
-<div class="caption"> 
-<p>SM_ Tech</p></a> 
-</div> 
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/></a>  
 </div>
 </div>
 
 <div class="col-xs-6"> 
 <div class="thumbnail">
 <a href="file:///storage/emulated/0/Convicted/Convicted.html"><img class="ads"
- src="Convicted.jpg"/>
- <div class="caption"> 
-<p>Convicted Records</p></a> 
-</div>
+ src="Convicted.jpg"/></a> 
 </div> 
 </div> 
 </div> 
@@ -611,20 +598,14 @@ required="required"/></center>
 <div class="row"> 
 <div class="col-xs-6"> 
 <div class="thumbnail">
-	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/>
-<div class="caption"> 
-<p>Place an Ad</p></a> 
-</div> 
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/></a>
 </div>
 </div>
 
 <div class="col-xs-6"> 
 <div class="thumbnail">
 <a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
- src="Advert.jpg"/>
- <div class="caption"> 
-<p>Place an Ad</p></a> 
-</div>
+ src="Advert.jpg"/></a> 
 </div> 
 </div> 
 </div> 
@@ -667,20 +648,14 @@ required="required"/></center>
 <div class="row"> 
 <div class="col-xs-6"> 
 <div class="thumbnail">
-	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/>
-<div class="caption"> 
-<p>SM_ Tech</p></a> 
-</div> 
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="SM_Tech.png"/></a>
 </div>
 </div>
 
 <div class="col-xs-6"> 
 <div class="thumbnail">
 <a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
- src="Convicted.jpg"/>
- <div class="caption"> 
-<p>Convicted Records</p></a> 
-</div>
+ src="Convicted.jpg"/></a> 
 </div> 
 </div> 
 </div> 
@@ -690,20 +665,14 @@ required="required"/></center>
 <div class="row"> 
 <div class="col-xs-6"> 
 <div class="thumbnail">
-	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/>
-<div class="caption"> 
-<p>Place an Ad</p></a> 
-</div> 
+	<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/reggaeMusic/reggaeMusic.html"><img class="ads" src="Advert.jpg"/></a>  
 </div>
 </div>
 
 <div class="col-xs-6"> 
 <div class="thumbnail">
 <a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/dancehallMusic/dancehallMusic.html"><img class="ads"
- src="Advert.jpg"/>
- <div class="caption"> 
-<p>Place an Ad</p></a> 
-</div>
+ src="Advert.jpg"/></a> 
 </div> 
 </div> 
 </div> 
@@ -738,21 +707,33 @@ required="required"/></center>
  </div>
 
  <div class="royal"><br>
- <span>PROGRAMME DURATION</span>
+ <span>SESSION DURATION</span>
  <span id="lblDuration"></span>s 
  <input value="0" id="durationR" oninput="seekSong();" type="range" min="0" style="width:100%">
  <span>VOLUME</span>
  <input id="idVolume" oninput="changeVolume();" value="1" type="range" min="0" step="0.1" max="1" style="width:100%">
-</div><br>
+</div><br> 
 <!--end of audio control button-->
+
+<p class="text-warning">To Subscribe, enter your Name below</p>
+
+<form name="MyForm" method="" action="" onsubmit="callback2();"> 
+
+<input type="text" name="Listener"/>
+
+<span class="badge" style="color:white">200 hours</span>
+
+<input type="submit" class="btn btn-success" value="Subscribe Now" onclick="setCookie();"/>
+	</form>
 	
-<span>DOWNLOAD THE RoyalFM APP HERE<a href="RoyalFM.signed.zip"><img id="download" src="download.png"/></a></span><hr>
+	<span class="badge" style="color:white">3000 Listeners</span>
+<!--<span>DOWNLOAD THE RoyalFM APP HERE<a href="RoyalFM.signed.zip"><img id="download" src="download.png"/></a></span>--><hr>
 	
 <nav><a href="file:///storage/emulated/0/Webdevelopment/about/about.html">
 	ABOUT</a>|<a href="file:///storage/emulated/0/Webdevelopment/about/contact.html">ENQUIRIES & FEEDBACK</a>|<a href="file:///storage/emulated/0/Webdevelopment/about/termsOfService.html">TERMS OF SERVICE</a></nav><br>
 
- <span>RoyalFM OUR JOURNEY, OUR NATION</span>
- 	
+<span>	RoyalFM OUR JOURNEY, OUR NATION</span>
+
  	<figure></figure>	<aside></aside>
  	<footer>&copy2023|RoyalFM Streaming Radio|All rights reserved</footer>
  	
